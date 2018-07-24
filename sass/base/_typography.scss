@@ -38,3 +38,33 @@ body {
     }
 
 }
+.heading-secondary{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  //set gradient on the h2
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  display: inline-block;//it wont span the whole width
+  -webkit-background-clip:text; //background gets clipped exactly where the text sits
+  color: transparent; //makes text see through so that we can see the background gradient
+  letter-spacing: 2px;
+  transition: all .2s ;
+
+
+  &:hover{
+    transform:skewY(2deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+}
+.heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph{
+  font-size: 1.6rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+
+}

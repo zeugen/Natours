@@ -1,6 +1,6 @@
 .row{
   max-width: $grid-width; //divide by10 since
-  background-color: #eee;
+
   margin:0 auto;//center blocks within blocks
 
   &:not(:last-child){
@@ -9,7 +9,7 @@
   @include clearfix;
 
   [class^="col-"]{
-    background-color: orangered;
+    
     float: left;
     &:not(:last-child){
       margin-right: $gutter-horizontal;
