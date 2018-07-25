@@ -16,7 +16,7 @@
     }
     &--p2{
       right:0;
-      top:-2rem;
+      top:2rem;
     }
     &--p3{
       left:20%;
@@ -31,6 +31,6 @@
 
   }
   &:hover &__photo:not(:hover){ //to make not selected elements scale down
-    transform: scale(-.95);
+    // transform: scale(-.3);
   }
 }
